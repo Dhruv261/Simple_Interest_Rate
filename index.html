@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <title>Web App – Simple Interest Calculator</title>
+</head>
+
+<body>
+    <div class="body">
+        <h1>Simple Interest Calculator</h1>
+
+        <div class="content">
+            <label class="item" for="Amount">Amount</label>
+            <input class="item" id="principal" type="number"><br><br>
+            <label class="item" for="InterestRate">Interest Rate</label>
+            <input class="item" type="range" name="InterestRateRange" id="Rate" min="1" max="20" step="1"
+                onchange="updateRange()">
+
+            <span id="rate">10%</span>
+            <label class="item" for="">No. Of Years</label>
+            <select class="item" id="years" name="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br>
+            <input id="InterestButton" type="submit" value="Compute Interest" onclick="compute()">
+        </div>
+        <div class="spandiv"> 
+            <span id="result"></span>
+        </div>
+
+        <footer>
+            &copy; Everyone Can Get Rich
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
